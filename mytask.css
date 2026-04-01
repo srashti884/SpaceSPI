@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    
+}
+#left{
+    margin-top: 2.5%;
+    border-radius: 10%;
+    height: 90%;
+    width: 35%;
+    background-color: rgb(215, 221, 110);
+    position: relative;
+}
+#a1{
+   height: 100%;
+   width: 100%;
+   background-color: black;
+   position: absolute;
+   left: 100%;
+   border-radius: 10%;
+   animation: a1 2s cubic-bezier(0.19, 1, 0.22, 1)2s infinite both;
+}
+@keyframes a1{
+    0%{
+        left: 100%;
+        right: 100%;
+        
+    }
+    50%{
+        left: 0%;
+        right: 100%;
+    }
+    100%{
+        left: 0%;
+        right: 0%;
+    }
+}
+
+#center{
+    height: 100%;
+    width: 50%;
+    background-color: brown;
+}
+#right{
+    margin-top: 2.5%;
+    border-radius: 10%;
+    height: 90%;
+    width: 35%;
+    background-color: cornflowerblue;
+}
